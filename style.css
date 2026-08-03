@@ -8,43 +8,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     background: #ADA996;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
 .main-div {
     height: auto;
     width: 30%;
-    border: 8px solid #95A5A6;
+    border: 5px solid #000428;
+    border-radius: 20px;
     align-items: center;
     margin-left: 35%;
-    margin-top: 5%;
-    padding-bottom: 20px;
+    margin-top: 3%;
+    padding-bottom: 10px;
     padding-top: 20px;
-    background: #abbaab;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #abbaab);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     background: #000428;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #004e92, #000428);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #004e92, #000428);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to right, #05192a, #000428);
+    background: linear-gradient(to right, #0c406d, #000428);
+    box-shadow: 2px 2px 20px #ADA996;
 }
 
 .main-heading {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-weight: 600;
     font-size: 30px;
     color: white;
@@ -60,30 +49,70 @@ body {
 }
 
 .btn {
-    padding: 10px 40px;
+    padding: 15px 40px;
     display: inline-flex;
     gap: 10px;
     margin-top: 10px;
     background-color: #1E4620;
     color: #FFFFFF;
-    border: 2px solid #839683;
-    border-radius: 20px;
-    box-shadow: 2px 2px 8px #839683;
+    border: 1px solid #05600a;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #036108;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
 }
 
 .deposite,
 .withdraw {
-    margin-left: 2rem;
+    margin-left: 1rem;
+}
+
+.deposite:hover {
+    background: linear-gradient(to right, #0d6a10, #022704);
+    cursor: pointer;
+}
+
+.withdraw:hover {
+    background: linear-gradient(to right, #0d6a10, #022704);
+    cursor: pointer;
+}
+
+.balance {
+    padding: 15px 30px;
+    background-color: #041f38;
+    background: linear-gradient(to right, #0c406d, #0718cf);
+    border: 1px solid #004e92;
+    box-shadow: 0px 0px 8px #01213c;
 }
 
 .balance,
 .clear {
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.clear {
+    padding: 15px 60px;
+    background: linear-gradient(to right, #01213c, #040d5e);
+    border: 1px solid #004e92;
+    box-shadow: 0px 0px 8px #01213c;
+}
+
+.clear:hover {
+    background: linear-gradient(to right, #11528b, #01052a);
+    cursor: pointer;
+}
+
+.balance:hover {
+    background: linear-gradient(to right, #11528b, #01052a);
+    cursor: pointer;
 }
 
 label {
     margin-left: 1rem;
-    color: #839683;
+    color: #67afee;
+    font-size: 12px;
 }
 
 input {
@@ -94,8 +123,45 @@ input {
     padding-left: 10px;
     width: 95%;
     margin-top: 5px;
-    border: 2px solid #7f8385;
+    border: 1px solid #a5d5e5;
     background: transparent;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: #bcdbf7;
+}
+
+.p4 {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+    color: #8aaac5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-logo {
+    display: flex;
+}
+
+.logo {
+    height: 35px;
+    width: 37px;
+    background: linear-gradient(145deg, #B88C31, #A57C26, #8B681F);
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 8px;
+}
+
+.p5 {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 2px;
 }
 
 .child-div {
@@ -147,11 +213,11 @@ input[type="number"]::-webkit-outer-spin-button {
     display: none;
     height: auto;
     width: 90%;
-    border: 6px solid #DBDBDB;
+    border: 3px solid #004e92;
     margin-top: 20px;
     padding: 20px 10px;
     margin-left: 1rem;
-    color: #37352b;
-    background: linear-gradient(to right, #f1e6e6, #839683);
+    color: #a9d0f4;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
     line-height: 30px;
 }
