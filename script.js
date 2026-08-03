@@ -9,7 +9,7 @@
     output.innerHTML = "<h2>Please Enter your amount </h2>";
     return;
    } 
-   totalAMount += inputAmount;
+   totalAMount = totalAMount + inputAmount;
      output.innerHTML =
   "<h2>Deposit Amount: " + inputAmount + "</h2>" +
    "<h2> Total Amount: " + totalAMount + "</h2>";
