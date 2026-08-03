@@ -46,18 +46,9 @@ body {
     justify-content: center;
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     flex-wrap: wrap;
-}
-
-.span {
-    padding: 5px 10px;
-    border-radius: 10px;
-    background: linear-gradient(145deg, #A7832F, #bd9641, #7A5D1F);
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #222f23;
 }
 
 .brand {
@@ -91,19 +82,56 @@ body {
 }
 
 label {
-    margin-left: 2rem;
+    margin-left: 1rem;
+    color: #839683;
 }
 
 input {
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     width: 95%;
     margin-top: 5px;
-    border: 2px solid #BDC3C7;
-    background: #fff;
+    border: 2px solid #7f8385;
+    background: transparent;
+}
+
+.child-div {
+    padding: 20px 10px;
+    height: auto;
+    width: 90%;
+    background-color: #0e3410;
+    margin: 20px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.p1 {
+    color: rgb(79, 159, 83, 0.7);
+    letter-spacing: 2px;
+    margin-left: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 8px #a3c5a5;
+}
+
+.p2 {
+    color: #58fd60;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 8px #baeabd;
+}
+
+.p3 {
+    color: #046b09;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 8px #07a60c;
 }
 
 input:focus {
@@ -116,6 +144,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #output {
+    display: none;
     height: auto;
     width: 90%;
     border: 6px solid #DBDBDB;

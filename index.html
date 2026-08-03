@@ -11,7 +11,13 @@
 <body>
         <div class="main-div">
         <h1 class="main-heading">Apex Trust Bank </h1>
-        <input type="number" name="" id="input" placeholder="Enter amount"> <br>
+        <div class="child-div">
+            <p class="p1">Available Balance</p>
+            <p class="p2">$2,450.00</p>
+            <p class="p3">Enter an amount to begin</p>
+        </div>
+        <label for="input">Amount</label>
+        <input type="number" name="" id="input" placeholder="0.00"> <br>
         <button class="btn deposite" onclick="deposite()">Deposite</button>
         <button class="btn balance" onclick="balance()">Check Balance</button> <br>
         <button class="btn withdraw" onclick="withdraw()">Withdraw</button>

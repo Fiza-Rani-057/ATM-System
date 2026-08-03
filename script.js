@@ -10,12 +10,14 @@
     return;
    } 
    totalAMount = totalAMount + inputAmount;
+   output.style.display = "block";
      output.innerHTML =
   "<h3>Deposit Amount: " + inputAmount + "</h3>" +
    "<h3> Total Amount: " + totalAMount + "</h3>";
  }
 
  function balance(){
+   output.style.display = "block";
      output.innerHTML = 
     "<h3>Current Balance:" + totalAMount + "</h3>"
  }
@@ -37,6 +39,7 @@
     if(inputAmount <= totalAMount){
          totalAMount = totalAMount - inputAmount;
    }
+   output.style.display = "block";
        
       output.innerHTML =
   "<h3>Withdraw  Amount: " + inputAmount + "</h3>" +
@@ -45,6 +48,7 @@
  }
   
  function clearData(){
+  output.style.display = "block";
     input.value = "";
     output.innerHTML =
     "<h3>Total Amount: " + totalAMount + "</h3>";
