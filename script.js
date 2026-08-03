@@ -45,8 +45,10 @@
  }
   
  function clearData(){
-    output.innerHTML = "";
+    // output.innerHTML = "";
     input.value = "";
+    output.innerHTML =
+    "<h2>Total Amount: " + totalAMount + "</h2>";
  }
 
    
