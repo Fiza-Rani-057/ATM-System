@@ -42,8 +42,7 @@
      margin-top: 10px;
  }
 
- .output{
-    display: none;
+ #output{
     height: auto;
     width: 40%;
     border: 3px solid gray;
