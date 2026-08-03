@@ -1,52 +1,128 @@
 * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
- }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
- .main-div {
-     height: auto;
-     width: 30%;
-     border: 8px solid gray;
-     align-items: center;
-     margin-left: 30%;
-     margin-top: 5%;
-     padding-bottom: 20px;
-     padding-top: 20px;
- }
+body {
+    font-family: Arial, Helvetica, sans-serif;
 
- .main-heading {
-     display: flex;
-     justify-content: center;
- }
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
- .btn {
-     padding: 8px 20px;
-     display: inline-flex;
-     gap: 10px;
-     margin-top: 10px;
- }
- .deposite,.withdraw{
-    margin-left: 5rem;
- }
- .balance , .clear{
- margin-left: 10px;
- }
+}
 
- input {
-     padding-right: 100px;
-     padding-left: 20px;
-     padding-top: 8px;
-     padding-bottom: 8px;
-     margin-left: 2rem;
-     margin-top: 10px;
- }
+.main-div {
+    height: auto;
+    width: 30%;
+    border: 8px solid #95A5A6;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #abbaab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
- #output{
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.main-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.span {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #A7832F, #bd9641, #7A5D1F);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #222f23;
+}
+
+.brand {
+    font-size: 10px;
+    color: #e2e7ec;
+    letter-spacing: 1.6px;
+    margin-left: 40px;
+
+}
+
+.btn {
+    padding: 10px 40px;
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: #1E4620;
+    color: #FFFFFF;
+    border: 2px solid #839683;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #839683;
+}
+
+.deposite,
+.withdraw {
+    margin-left: 2rem;
+}
+
+.balance,
+.clear {
+    margin-left: 10px;
+}
+
+label {
+    margin-left: 2rem;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    width: 95%;
+    margin-top: 5px;
+    border: 2px solid #BDC3C7;
+    background: #fff;
+}
+
+input:focus {
+    border: 1px solid #d8d3b7;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#output {
     height: auto;
     width: 90%;
-    border: 3px solid gray;
+    border: 6px solid #DBDBDB;
     margin-top: 20px;
     padding: 20px 10px;
     margin-left: 1rem;
- }
+    color: #37352b;
+    background: linear-gradient(to right, #f1e6e6, #839683);
+    line-height: 30px;
+}
