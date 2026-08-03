@@ -21,11 +21,6 @@
  }
  function withdraw(){
     let inputAmount = parseFloat(input.value);
-    totalAMount -= inputAmount;
-      if(input.value === ""){
-    output.innerHTML = "<h2>Please Enter your amount </h2>";
-    return;
-   }
      if(inputAmount === ""){
      output.innerHTML = "<h2>Please Enter your amount </h2>";
      return;
@@ -40,11 +35,11 @@
     return; 
     }
     if(inputAmount <= totalAMount){
-         totalAMount -= inputAmount;
+         totalAMount = totalAMount - inputAmount;
    }
        
       output.innerHTML =
-  "<h2>Deposit Amount: " + inputAmount + "</h2>" +
+  "<h2>Withdraw  Amount: " + inputAmount + "</h2>" +
    "<h2>Current Balance: " + totalAMount + "</h2>";
     
  }
