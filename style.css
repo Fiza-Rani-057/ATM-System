@@ -188,7 +188,7 @@ input::placeholder {
     font-size: 30px;
     margin-bottom: 20px;
     margin-left: 10px;
-    text-shadow: 0px 0px 8px #baeabd;
+    text-shadow: 0px 0px 10px #77f87f;
 }
 
 .p3 {
@@ -196,7 +196,7 @@ input::placeholder {
     letter-spacing: 2px;
     font-size: 13px;
     margin-left: 10px;
-    text-shadow: 0px 0px 8px #07a60c;
+    text-shadow: 0px 0px 10px #07a60c;
 }
 
 input:focus {
