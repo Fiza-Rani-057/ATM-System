@@ -10,8 +10,6 @@ body {
     background: #ADA996;
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-
-
 }
 
 .main-div {
@@ -35,7 +33,7 @@ body {
     justify-content: center;
     margin-bottom: 8px;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     flex-wrap: wrap;
 }
@@ -126,6 +124,7 @@ input {
     border: 1px solid #a5d5e5;
     background: transparent;
     border-radius: 10px;
+    color: #c5dae1;
 }
 
 input::placeholder {
@@ -175,7 +174,7 @@ input::placeholder {
 }
 
 .p1 {
-    color: rgb(79, 159, 83, 0.7);
+    color: rgba(241, 243, 241, 0.7);
     letter-spacing: 2px;
     margin-left: 10px;
     font-size: 10px;
@@ -184,7 +183,7 @@ input::placeholder {
 }
 
 .p2 {
-    color: #58fd60;
+    color: #f5f9f5;
     letter-spacing: 2px;
     font-size: 30px;
     margin-bottom: 20px;
@@ -193,7 +192,7 @@ input::placeholder {
 }
 
 .p3 {
-    color: #046b09;
+    color: #edf4ee;
     letter-spacing: 2px;
     font-size: 13px;
     margin-left: 10px;
@@ -217,7 +216,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 20px;
     padding: 20px 10px;
     margin-left: 1rem;
-    color: #a9d0f4;
+    color: #eff1f3;
     background: -webkit-linear-gradient(to right, #004e92, #000428);
     line-height: 30px;
 }
