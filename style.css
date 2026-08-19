@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background: #ADA996;
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
@@ -173,7 +172,7 @@ input::placeholder {
 }
 
 .p1 {
-    color: rgba(241, 243, 241, 0.7);
+    color: white;
     letter-spacing: 2px;
     margin-left: 10px;
     font-size: 10px;
