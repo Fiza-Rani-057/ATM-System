@@ -1,3 +1,5 @@
+
+/* ===== General Styling ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,216 +7,358 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ADA996;
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-}
-
-.main-div {
-    height: auto;
-    width: 30%;
-    border: 5px solid #000428;
-    border-radius: 20px;
-    margin-left: 35%;
-    margin-top: 3%;
-    padding-bottom: 10px;
-    padding-top: 20px;
-    background: #000428;
-    background: -webkit-linear-gradient(to right, #05192a, #000428);
-    background: linear-gradient(to right, #0c406d, #000428);
-    box-shadow: 2px 2px 20px #ADA996;
-}
-
-.main-heading {
+    min-height: 100vh;
+    padding: 20px 12px;
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
-    font-weight: 600;
-    font-size: 20px;
-    color: white;
-    flex-wrap: wrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #eaeaea,
+        #dbdbdb,
+        #f2f2f2,
+        #ada996
+    );
 }
 
-.brand {
-    font-size: 10px;
-    color: #e2e7ec;
-    letter-spacing: 1.6px;
-    margin-left: 40px;
+/* ===== Main ATM Card ===== */
+.main-div {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    padding: 24px 20px 18px;
 
+    border: 2px solid #000428;
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #0c406d,
+        #000428
+    );
+
+    box-shadow: 0 12px 35px rgba(0, 4, 40, 0.3);
 }
 
-.btn {
-    padding: 15px 40px;
-    display: inline-flex;
-    gap: 10px;
-    margin-top: 10px;
-    background-color: #1E4620;
-    color: #FFFFFF;
-    border: 1px solid #05600a;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px #036108;
-    text-align: center;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
-}
-
-.deposite,
-.withdraw {
-    margin-left: 1rem;
-}
-
-.deposite:hover {
-    background: linear-gradient(to right, #0d6a10, #022704);
-    cursor: pointer;
-}
-
-.withdraw:hover {
-    background: linear-gradient(to right, #0d6a10, #022704);
-    cursor: pointer;
-}
-
-.balance {
-    padding: 15px 30px;
-    background-color: #041f38;
-    background: linear-gradient(to right, #0c406d, #0718cf);
-    border: 1px solid #004e92;
-    box-shadow: 0px 0px 8px #01213c;
-}
-
-.balance,
-.clear {
-    margin-left: 5px;
-}
-
-.clear {
-    padding: 15px 60px;
-    background: linear-gradient(to right, #01213c, #040d5e);
-    border: 1px solid #004e92;
-    box-shadow: 0px 0px 8px #01213c;
-}
-
-.clear:hover {
-    background: linear-gradient(to right, #11528b, #01052a);
-    cursor: pointer;
-}
-
-.balance:hover {
-    background: linear-gradient(to right, #11528b, #01052a);
-    cursor: pointer;
-}
-
-label {
-    margin-left: 1rem;
-    color: #67afee;
-    font-size: 12px;
-}
-
-input {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 95%;
-    margin-top: 5px;
-    border: 1px solid #a5d5e5;
-    background: transparent;
-    border-radius: 10px;
-    color: #c5dae1;
-}
-
-input::placeholder {
-    color: #bcdbf7;
-}
-
-.p4 {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 30px;
-    color: #8aaac5;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+/* ===== Logo and Heading ===== */
 .main-logo {
     display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
 .logo {
-    height: 35px;
-    width: 37px;
-    background: linear-gradient(145deg, #B88C31, #A57C26, #8B681F);
-    color: #FFFFFF;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 8px;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #b88c31,
+        #a57c26,
+        #8b681f
+    );
+
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.brand-info {
+    min-width: 0;
+}
+
+.main-heading {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
 }
 
 .p5 {
-    color: white;
+    color: #b8c9db;
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 2px;
+    margin-top: 5px;
 }
 
+/* ===== Balance Card ===== */
 .child-div {
-    padding: 20px 10px;
-    height: auto;
-    width: 90%;
-    background-color: #0e3410;
-    margin: 20px 10px;
-    border-radius: 20px;
-    margin-left: 10px;
+    width: 100%;
+    padding: 22px 16px;
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #0e3410,
+        #09250d
+    );
+
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 .p1 {
-    color: white;
+    color: #c3d8c5;
+    font-size: 11px;
     letter-spacing: 2px;
-    margin-left: 10px;
-    font-size: 10px;
-    margin-bottom: 20px;
-    text-shadow: 0px 0px 8px #a3c5a5;
+    margin-bottom: 16px;
 }
 
 .p2 {
     color: #f5f9f5;
-    letter-spacing: 2px;
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    text-shadow: 0px 0px 10px #77f87f;
+    font-size: clamp(25px, 6vw, 32px);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    overflow-wrap: anywhere;
 }
 
 .p3 {
-    color: #edf4ee;
-    letter-spacing: 2px;
-    font-size: 13px;
-    margin-left: 10px;
-    text-shadow: 0px 0px 10px #07a60c;
+    color: #b9d7bc;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* ===== Amount Input ===== */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: #8bc6f5;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+
+    border: 1px solid #35678c;
+    border-radius: 10px;
+    outline: none;
+
+    background: rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    font-size: 16px;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder {
+    color: #9ebbd3;
 }
 
 input:focus {
-    border: 1px solid #d8d3b7;
+    border-color: #67afee;
+    box-shadow: 0 0 0 3px rgba(103, 175, 238, 0.15);
 }
 
+/* Hide number input arrows */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+    margin: 0;
 }
 
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+/* ===== Buttons ===== */
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.btn {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 12px 8px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+   margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Deposit */
+.deposite,
+.withdraw {
+    background: linear-gradient(135deg, #14752a, #063b13);
+    border-color: #198754;
+    box-shadow: 0 3px 10px rgba(3, 97, 8, 0.2);
+}
+
+.deposite:hover,
+.withdraw:hover {
+    background: linear-gradient(135deg, #198b35, #07551a);
+}
+
+/* Check Balance */
+.balance {
+    background: linear-gradient(135deg, #0c609b, #0718a0);
+    border-color: #2476b8;
+}
+
+.balance:hover {
+    background: linear-gradient(135deg, #1477b7, #1025c4);
+}
+
+/* Clear */
+.clear {
+    background: linear-gradient(135deg, #012b4c, #040d5e);
+    border-color: #315b8b;
+}
+
+.clear:hover {
+    background: linear-gradient(135deg, #11528b, #01052a);
+}
+
+/* ===== Output Message ===== */
 #output {
     display: none;
-    height: auto;
-    width: 90%;
-    border: 3px solid #004e92;
-    margin-top: 20px;
-    padding: 20px 10px;
-    margin-left: 1rem;
-    color: #eff1f3;
-    background: -webkit-linear-gradient(to right, #004e92, #000428);
-    line-height: 30px;
+    width: 100%;
+    margin-top: 18px;
+    padding: 14px;
+
+    border: 1px solid #287bb4;
+    border-radius: 10px;
+
+    color: #eff7ff;
+    background: linear-gradient(135deg, #004e92, #000428);
+
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Footer ===== */
+.p4 {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 25px;
+    color: #9ab5ce;
+    letter-spacing: 0.4px;
+}
+
+/* ===== Tablets ===== */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+
+    .main-div {
+        width: 400px;
+    }
+}
+
+/* ===== Mobile Phones ===== */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .main-div {
+        width: 100%;
+        padding: 20px 15px 16px;
+        border-radius: 18px;
+    }
+
+    .main-logo {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 38px;
+        height: 38px;
+        font-size: 21px;
+    }
+
+    .main-heading {
+        font-size: clamp(17px, 5vw, 20px);
+    }
+
+    .p5 {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .child-div {
+        padding: 19px 13px;
+        margin-bottom: 22px;
+    }
+
+    .button-group {
+        gap: 10px;
+    }
+
+    .btn {
+        min-height: 46px;
+        padding: 11px 5px;
+        font-size: 12px;
+    }
+
+    .p4 {
+        margin-top: 22px;
+        line-height: 1.6;
+    }
+}
+
+/* ===== Very Small Phones ===== */
+@media (max-width: 340px) {
+    .main-div {
+        padding: 16px 10px;
+    }
+
+    .main-heading {
+        font-size: 16px;
+    }
+
+    .p5 {
+        letter-spacing: 1px;
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 10px 3px;
+    }
+
+    .p1 {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
 }
